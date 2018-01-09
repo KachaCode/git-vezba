@@ -1,0 +1,80 @@
+@mixin webkitFix {
+    -webkit-margin-before: 0;
+     -webkit-margin-after: 0;
+     -webkit-margin-start: 0;
+        -moz-margin-start: 0;
+       -webkit-margin-end: 0;
+          -moz-margin-end: 0;
+    -webkit-padding-start: 0;
+       -moz-padding-start: 0;
+}
+
+@mixin ivica ($zakrivljenje) {
+    -webkit-border-radius: $zakrivljenje;
+       -moz-border-radius: $zakrivljenje;
+        -ms-border-radius: $zakrivljenje;
+            border-radius: $zakrivljenje;
+}
+
+@mixin centriranje {
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+@mixin borderBox {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@mixin columne($col) {
+    -webkit-column-count: ($col);
+       -moz-column-count: ($col);
+        -ms-column-count: ($col);
+            column-count: ($col);
+}
+
+@mixin balansKolone {
+    -webkit-column-fill: balance;
+       -moz-column-fill: balance;
+        -ms-column-fill: balance;
+            column-fill: balance;
+}
+
+@mixin justice {
+    color: $shadow;
+    text-align: center;
+    @content;
+}
+
+@mixin forma {
+    display: block;
+    width: 67%;
+    float: right;
+    border: 1px solid $headerFontColor;
+    padding: .2em;
+    font-size: inherit;
+    line-height: 135%;
+}
+
+@mixin clearfix {
+    &::before {
+        content: "";
+        display: table;
+    }
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin sveVeceOdTableta {
+    @media only screen and (min-width: #{$tablet-width}) {
+        @content;
+    }
+}

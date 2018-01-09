@@ -1,7 +1,50 @@
-h1 {
-  color: $navColor;
+@import "vars";
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  @include webkitFix;
 }
 
-h2 {
-  color: $shadow;
+// WRAPPER
+.wrapper {
+  width: 80%;
+  margin: auto;
+  border: 1px solid $navColor;
+}
+
+// HEADER
+header {
+  padding: 1.5em 1em;
+
+    h1 {
+      color: $navColor;
+    }
+
+    h2 {
+      color: $shadow;
+    }
+}
+
+// NAVIGATION
+nav {
+  background: $navColor;
+  padding: .8em 1em;
+  @include clearfix;
+
+    ul {
+      float: right;
+
+        li {
+          display: inline;
+          color: $navFont;
+          padding: 0 .6em;
+
+            a {
+              text-decoration: none;
+              color: inherit;
+            }
+        }
+    }
 }
