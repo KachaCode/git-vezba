@@ -48,3 +48,20 @@ nav {
         }
     }
 }
+
+// SIDEBAR
+aside {
+  width: 20%;
+  margin: 1.4em;
+
+
+  li {
+    list-style: none;
+    padding: .2em;
+    font-weight: bold;
+
+      a {
+        text-decoration: none;
+      }
+  }
+}

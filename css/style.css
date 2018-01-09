@@ -42,4 +42,14 @@ nav {
         text-decoration: none;
         color: inherit; }
 
+aside {
+  width: 20%;
+  margin: 1.4em; }
+  aside li {
+    list-style: none;
+    padding: .2em;
+    font-weight: bold; }
+    aside li a {
+      text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
