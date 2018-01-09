@@ -12,6 +12,7 @@
   width: 80%;
   margin: auto;
   border: 1px solid $navColor;
+  @include clearfix;
 }
 
 // HEADER
@@ -53,6 +54,7 @@ nav {
 aside {
   width: 20%;
   margin: 1.4em;
+  display: inline-block;
 
 
   li {
@@ -64,4 +66,23 @@ aside {
         text-decoration: none;
       }
   }
+}
+
+// MAIN
+main {
+  display: inline-block;
+  vertical-align: top;
+  width: 76%;
+  float: right;
+
+    h1 {
+      float: right;
+      margin: .6em .4em 0;
+    }
+
+    p {
+      clear: both;
+      margin: .6em;
+      text-align: justify;
+    }
 }
