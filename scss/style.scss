@@ -7,6 +7,10 @@
   @include webkitFix;
 }
 
+html {
+  font-family: Arial, sans-serif;
+}
+
 // WRAPPER
 .wrapper {
   width: 80%;
@@ -18,9 +22,10 @@
 // HEADER
 header {
   padding: 1.5em 1em;
+  background: url('../images/header.jpg') center right;
 
     h1 {
-      color: $navColor;
+      color: $navFont;
     }
 
     h2 {
@@ -82,7 +87,15 @@ main {
 
     p {
       clear: both;
-      margin: .6em;
+      margin: .7em;
       text-align: justify;
     }
+}
+
+// FOOTER
+footer {
+  text-align: center;
+  clear: both;
+  border-top: 1px solid $navColor;
+  padding: .6em;
 }
