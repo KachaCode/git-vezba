@@ -2,54 +2,54 @@
 @import "mixins";
 
 * {
-  padding: 0;
-  margin: 0;
-  @include webkitFix;
+    padding: 0;
+    margin: 0;
+    @include webkitFix;
 }
 
 html {
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 // WRAPPER
 .wrapper {
-  width: 80%;
-  margin: auto;
-  border: 1px solid $navColor;
-  @include clearfix;
+    width: 80%;
+    margin: auto;
+    border: 1px solid $navColor;
+    @include clearfix;
 }
 
 // HEADER
 header {
-  padding: 1.5em 1em;
-  background: url('../images/header.jpg') center right;
+    padding: 1.5em 1em;
+    background: url('../images/header.jpg') center right;
 
     h1 {
-      color: $navFont;
+        color: $navFont;
     }
 
     h2 {
-      color: $shadow;
+        color: $shadow;
     }
 }
 
 // NAVIGATION
 nav {
-  background: $navColor;
-  padding: .8em 1em;
-  @include clearfix;
+    background: $navColor;
+    padding: .8em 1em;
+    @include clearfix;
 
     ul {
-      float: right;
+        float: right;
 
         li {
-          display: inline;
-          color: $navFont;
-          padding: 0 .6em;
+            display: inline;
+            color: $navFont;
+            padding: 0 .6em;
 
             a {
-              text-decoration: none;
-              color: inherit;
+                text-decoration: none;
+                color: inherit;
             }
         }
     }
@@ -57,45 +57,44 @@ nav {
 
 // SIDEBAR
 aside {
-  width: 20%;
-  margin: 1.4em;
-  display: inline-block;
+    width: 20%;
+    margin: 1.4em;
+    display: inline-block;
 
 
-  li {
-    list-style: none;
-    padding: .2em;
-    font-weight: bold;
+    li {
+        list-style: none;
+        padding: .2em;
+        font-weight: bold;
 
-      a {
-        text-decoration: none;
-      }
-  }
+        a {
+            text-decoration: none;
+        }
+    }
 }
 
 // MAIN
 main {
-  display: inline-block;
-  vertical-align: top;
-  width: 76%;
-  float: right;
+    vertical-align: top;
+    width: 76%;
+    float: right;
 
     h1 {
-      float: right;
-      margin: .6em .4em 0;
+        float: right;
+        margin: .6em .4em 0;
     }
 
     p {
-      clear: both;
-      margin: .7em;
-      text-align: justify;
+        clear: both;
+        margin: .7em;
+        text-align: justify;
     }
 }
 
 // FOOTER
 footer {
-  text-align: center;
-  clear: both;
-  border-top: 1px solid $navColor;
-  padding: .6em;
+    text-align: center;
+    clear: both;
+    border-top: 1px solid $navColor;
+    padding: .6em;
 }
